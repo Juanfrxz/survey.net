@@ -9,4 +9,6 @@ namespace Domain.Entities;
         public string? ComponentReact { get; set; } 
         public string? ChapterNumber { get; set; } 
         public string? ChapterTitle { get; set; } 
+        public Survey? Survey { get; set; } 
+        public ICollection<Question> Questions { get; set; } = new List<Question>();
  } 
