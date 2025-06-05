@@ -1,5 +1,5 @@
 namespace Domain.Entities;  
-    public class SumaryOption 
+    public class SumaryOption : BaseEntity
  { 
         public int Id { get; set; } 
         public int IdSurvey { get; set; } 

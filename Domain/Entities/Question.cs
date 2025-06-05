@@ -1,10 +1,8 @@
 namespace Domain.Entities;  
-    public class Question 
+    public class Question : BaseEntity
  { 
         public int Id { get; set; } 
         public int ChapterId { get; set; } 
-        public DateTime CreatedAt { get; set; } 
-        public DateTime UpdateAt { get; set; } 
         public string? QuestionNumber { get; set; } 
         public Chapter? Chapter { get; set; } 
         public string? ResponseType { get; set; } 

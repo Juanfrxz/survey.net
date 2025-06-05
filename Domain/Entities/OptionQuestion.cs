@@ -1,8 +1,7 @@
 namespace Domain.Entities;  
-    public class OptionQuestion 
+    public class OptionQuestion : BaseEntity
  { 
         public int Id { get; set; } 
-        public DateTime CreatedAt { get; set; } 
         public int OptionId { get; set; } 
         public int OptioncatalogId { get; set; } 
         public CategoriesCatalog? CategoriesCatalog { get; set; } 

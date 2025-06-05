@@ -1,10 +1,8 @@
 namespace Domain.Entities;  
-    public class SubQuestion 
+    public class SubQuestion : BaseEntity
  { 
         public int Id { get; set; } 
-        public DateTime CreatedAt { get; set; } 
         public int SubQuestionId { get; set; } 
-        public DateTime UpdatedAt { get; set; } 
         public string? SubQuestionNumber { get; set; }
         public Question? Question { get; set; } 
         public string? CommentSubquestion { get; set; } 
