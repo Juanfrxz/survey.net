@@ -62,7 +62,11 @@ public class OptionQuestionController : BaseApiController
         // Actualización controlada de campos específicos
         existingOptionQuestion.CommentOptionres = optionQuestion.CommentOptionres;
         existingOptionQuestion.Numberoption = optionQuestion.Numberoption;
-        existingOptionQuestion.UpdateAt = optionQuestion.UpdateAt; // Actualiza 
+        existingOptionQuestion.OptionId = optionQuestion.OptionId; 
+        existingOptionQuestion.OptioncatalogId = optionQuestion.OptioncatalogId; 
+        existingOptionQuestion.OptionquestionId = optionQuestion.OptionquestionId; 
+        existingOptionQuestion.SubquestionId = optionQuestion.SubquestionId; 
+        existingOptionQuestion.Numberoption = optionQuestion.Numberoption; 
         // Puedes agregar más propiedades aquí según el modelo
 
         _unitOfWork.OptionQuestions.Update(existingOptionQuestion);
